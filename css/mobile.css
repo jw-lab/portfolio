@@ -1,0 +1,93 @@
+@media screen and (max-width:600px) {
+    body{
+        background: black;
+        color: white;
+    }
+
+    .content-box{
+        height: inherit;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    #header{
+        height: 140px;
+    }
+
+    #header #logo{
+        font-size: 24px;
+        margin-top: 20px;
+        border-bottom: 1px dotted black;
+        font-family: 'Do Hyeon', sans-serif;
+    }
+        
+    #header .gnb{
+        font-size: 18px;
+        color: gray;
+        margin-top: 20px;
+    }
+
+    #aside{
+        height: inherit;
+        width: 100%;
+    }
+        #aside>#tab-container{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        #aside>#tab-container label{
+            display: block;
+            flex-grow: 1;
+        }
+
+        #aside .tab-item li{
+            display: flex;
+            justify-content: center;
+            border: 1px solid white;
+            border-top: none;
+            padding: 10px;
+        }
+        #aside .tab-item .thumbnail{
+            display: block;
+            margin-right: 20px;
+        }
+
+        #aside .tab-item .description>strong{
+            overflow: visible;
+        }
+
+        #aside>input:nth-of-type(1):checked ~ #tab-container>label:nth-of-type(1),
+        #aside>input:nth-of-type(2):checked ~ #tab-container>label:nth-of-type(2)
+        {
+            background:white;
+            color: black;
+        }
+
+        #aside .tab-item li{
+            overflow: hidden;
+            border: 1px solid white;
+            border-top: none;
+            padding: 10px;
+        }
+        #aside .tab-item li:hover{
+            background:rgba(255, 255, 255, 0.3);
+        }
+
+        #aside .tab-item .description>strong{
+            display: block;
+            width: 120px;
+            color: red;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+    #main{
+        width: auto;
+        padding: 30px;
+    }
+}

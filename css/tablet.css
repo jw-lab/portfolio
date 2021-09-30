@@ -1,0 +1,46 @@
+@media screen and (max-width:960px){
+    #header{
+        background: wheat;
+    }
+    .content-box{
+        display: flex;
+        justify-content: space-around;
+        height: inherit;
+        width: 100%;
+    }
+
+
+    #visual{
+        background: lightblue;
+        padding: 10px;
+    }
+
+        #visual span{
+            font-size: 30px;
+            letter-spacing: 2px;
+        }
+
+
+
+    #aside{
+        height: inherit;
+        width: auto;
+    }
+
+        #aside>#tab-container{
+            display: flex;
+            flex-direction: column;
+        }
+        #aside>#tab-container label{
+            display: block;
+            width: inherit;
+        }
+        #aside .tab-item .thumbnail{
+            display: none;
+        }
+    
+    #main{
+        flex-grow: 1;
+    }
+}
+

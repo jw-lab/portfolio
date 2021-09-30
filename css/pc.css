@@ -1,0 +1,162 @@
+
+body{
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.d-none{
+    display: none;
+}
+
+.content-box{
+    height: inherit;
+    width: 960px;
+    margin: 0 auto;
+}
+
+/* ------------------------------------------------------- */
+
+#header{
+    height: 70px;
+    border-bottom: 5px double gray;
+}
+    #header #logo{
+        float: left;
+        font-size: 24px;
+        margin-top: 20px;
+        font-family: 'Do Hyeon', sans-serif;
+    }
+        
+    #header .gnb{
+        float: right;
+        font-size: 18px;
+        color: gray;
+        margin-top: 20px;
+    }
+
+    #header .gnb li{
+        display: inline-block;
+        border-left: 1px solid black;
+        margin-left: 30px;
+        padding-left: 28px;
+    }
+    #header .gnb li:first-child{
+        border-left: none;
+        margin-left: 0;
+    }
+
+#visual{
+    background: url("../images/sky-unsplash.jpg") no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+    padding: 150px;
+}
+    #visual span{
+        font-size: 60px;
+        letter-spacing: -2px;
+        font-family: 'Do Hyeon', sans-serif;
+        color: white;
+    }
+/* ------------------------------------------------- */
+#body{
+    border-top: 2px solid gray;
+}
+
+    #body>.content-box{
+        display: flex;
+    }
+    
+    #aside{
+        height: inherit;
+        width: 200px;
+    }
+
+        #aside>#tab-container{
+            font-size: 20px;
+            border-bottom: 3px solid gray;
+            overflow: hidden;
+
+        }
+        #aside>#tab-container label{
+            display: block;
+            float: left;
+            width: 100px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            cursor: pointer;
+            border: 1px solid black;
+            border-top: none;
+            border-bottom: none;
+        }
+
+        #aside .tab-item{
+            display: none;
+        }
+
+        #aside>input:nth-of-type(1):checked ~ div:nth-of-type(1),
+        #aside>input:nth-of-type(2):checked ~ div:nth-of-type(2){
+            display: block;
+        }
+
+
+        #aside>input:nth-of-type(1):checked ~ #tab-container>label:nth-of-type(1),
+        #aside>input:nth-of-type(2):checked ~ #tab-container>label:nth-of-type(2)
+        {
+            background: black;
+            color: white;
+        }
+
+        #aside .tab-item li{
+            overflow: hidden;
+            border: 1px solid black;
+            border-top: none;
+            padding: 10px;
+        }
+        #aside .tab-item li:hover{
+            background:rgba(0, 0, 0, 0.3);
+        }
+
+        #aside .tab-item .thumbnail{
+            float: left;
+            width: 45px;
+            height: 45px;
+        }
+        #aside .tab-item .description{
+            float: right;
+
+        }
+        #aside .tab-item .description>strong{
+            display: block;
+            width: 120px;
+            color: blue;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+
+    #main{
+        font-family: 'Nanum Pen Script', cursive;
+        font-size: 20px;
+        width: 760px;
+        padding: 20px;
+        background: url("../images/beach-unsplash.jpg") no-repeat;
+        background-size:100% 100%;
+        
+    }
+
+    #main .title {
+        font-size: 24px;
+        font-weight: bold;
+        border-bottom: 1px solid black;
+        margin-bottom: 10px;
+    }
+
+
+/* -------------------------------------------------------- */
+#footer{
+    background: lightblue;
+    border-top: 2px solid gray;
+    text-align: center;
+    padding: 40px;
+}
