@@ -8,4 +8,4 @@
 + index.html 추가
 + 내컴퓨터에서 비주얼 스튜디오 코드로 수정후 커밋하고 깃허브로 올림 push
 
-[호스팅주소](https://jw-lab.github.io/test/)
+[호스팅주소](https://jw-lab.github.io/portfolio/)
